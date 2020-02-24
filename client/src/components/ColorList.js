@@ -25,9 +25,7 @@ const ColorList = ({ colors, updateColors }) => {
       .put(`/colors/${colorToEdit.id}`, colorToEdit)
       .then(res => {
           updateColors(res.data);
-          // setMovie(initialMovie);
           console.log(res.data);
-          // props.history.push("/");
       })
       .catch(err => {
           console.log(err);
