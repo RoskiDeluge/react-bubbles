@@ -28,7 +28,7 @@ const Login = props => {
       .post("/login", credentials)
       .then(res => {
         localStorage.setItem("token", res.data.payload);
-        props.history.push("/protected");
+        props.history.push("/colors");
       })
       .catch(err => {
         localStorage.removeItem("token");
