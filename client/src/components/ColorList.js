@@ -47,10 +47,6 @@ const ColorList = ({ colors, updateColors }) => {
       })
   };
 
-  // useEffect(() => {
-  //   deleteColor();
-  // }, [colorToEdit])
-
   const deleteColor = color => {
     // make a delete request to delete this color
     axiosWithAuth()
